@@ -20,3 +20,5 @@ function onGeoError() {
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk,onGeoError);
+
+//<i class="fas fa-cloud-moon-rain"></i>
