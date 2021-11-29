@@ -12,8 +12,9 @@ function saveToDos() {
 
 function checkToDo(event) {
     //classList로 toggle하는걸로 바꾸기
+    //껐다 켜도 그대로 되어있는 상태로 바꾸기
     const li = event.target.parentElement;
-    li.style.color= "#272341";
+    li.style.color= "rgba(98, 98, 98, 0.4)";
     li.style.textDecoration = "line-through";
 }
 
