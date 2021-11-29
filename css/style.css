@@ -12,6 +12,8 @@ body {
     background-size: cover;
     background-attachment: fixed;
     flex-direction: column;
+
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none
 }
 
 #todo-list {

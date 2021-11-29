@@ -9,8 +9,9 @@ let toDos = [];
 function saveToDos() {
     localStorage.setItem(TODOS_KEY,JSON.stringify(toDos));
 }
-//document.body.style.backgroundImage = `url('./img/${chosenImage}')`;
-function finishToDo(event) {
+
+function checkToDo(event) {
+    //classList로 toggle하는걸로 바꾸기
     const li = event.target.parentElement;
     li.style.color= "#272341";
     li.style.textDecoration = "line-through";
@@ -33,8 +34,7 @@ function paintToDo(newToDo) {
     const button = document.createElement("button");
     button.innerText = "❌";
     button.addEventListener("click",deleteToDo);
-
-    span.addEventListener("dblclick",finishToDo);
+    span.addEventListener("dblclick",checkToDo);
 
     li.appendChild(span);
     li.appendChild(button);
