@@ -9,6 +9,12 @@ let toDos = [];
 function saveToDos() {
     localStorage.setItem(TODOS_KEY,JSON.stringify(toDos));
 }
+//document.body.style.backgroundImage = `url('./img/${chosenImage}')`;
+function finishToDo(event) {
+    const li = event.target.parentElement;
+    li.style.color= "#272341";
+    li.style.textDecoration = "line-through";
+}
 
 function deleteToDo(event) {
     const li = event.target.parentElement;
@@ -27,6 +33,9 @@ function paintToDo(newToDo) {
     const button = document.createElement("button");
     button.innerText = "❌";
     button.addEventListener("click",deleteToDo);
+
+    span.addEventListener("dblclick",finishToDo);
+
     li.appendChild(span);
     li.appendChild(button);
     toDoList.appendChild(li);
