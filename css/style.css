@@ -2,6 +2,12 @@
     display: none;
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+}
+
 body {
     display: flex;
     justify-content: space-around;
@@ -12,8 +18,8 @@ body {
     background-size: cover;
     background-attachment: fixed;
     flex-direction: column;
-
-    -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;
+    min-height: 100%;
 }
 
 #todo-list {
@@ -29,10 +35,6 @@ body {
 #greeting {
     font-size: 40px;
     margin-top: 0px;
-}
-
-#quote {
-    position: relative;
 }
 
 input {
@@ -60,5 +62,20 @@ button {
     background-color:transparent;
     margin-left: 10px;
     font-size: 10px;
+
+}
+
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	padding: 50px;
+	text-align: center;
+}
+
+#quote{
+    padding: 80px;
 
 }
