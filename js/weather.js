@@ -1,5 +1,3 @@
-
-
 const API_KEY = "4a27e63d2b9aa488914c30c2fb65ebe0";
 let weatherIcon = {
     '01' : 'fas fa-sun',
@@ -12,8 +10,8 @@ let weatherIcon = {
     '13' : 'far fa-snowflake',
     '50' : 'fas fa-smog'
 };
-function onGeoOk(position) {
 
+function onGeoOk(position) {
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
