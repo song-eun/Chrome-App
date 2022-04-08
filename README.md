@@ -3,7 +3,7 @@
 ### 제작기간
 1주 (9.27 ~ 10.4)
 
-
+https://song-eun.github.io/Chrome-App/
 
 
 
@@ -30,3 +30,5 @@
 
 
 - [x] todo-list 더블 클릭하면 글씨 어둡게 and 줄긋기
+
+
